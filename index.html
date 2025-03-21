@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Acceso protegido</title>
+  <script>
+    function verificarPassword() {
+      var pass = prompt("Introduce la contraseña:");
+      if (pass === "hola") {
+        document.getElementById("contenido").style.display = "block";
+      } else {
+        alert("Contraseña incorrecta");
+      }
+    }
+  </script>
+</head>
+<body onload="verificarPassword()">
+  <div id="contenido" style="display:none;">
+    <h2>Mis imágenes</h2>
+    <img src="https://drive.google.com/file/d/1gZ6qwlfVjMAbXINeYQBXvvZO22qeKE3E/view?usp=drive_link" width="300"><br>
+  </div>
+</body>
+</html>
